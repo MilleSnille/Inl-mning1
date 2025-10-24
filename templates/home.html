@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 <body>
     {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
@@ -9,15 +16,9 @@
         {% endif %}
     {% endwith %}
 
-<h1>Login</h1>
-    <form action="/login" method="post">
-    Användarnamn:<br>
-    <input type="text" name="username">
-    <br>
-    Lösenord:<br>
-    <input type="password" name="password">
-    <br>
-    <input type="submit" value="Logga in">
-  </form>
-</body>
 
+    <!-- <h1>välkommen</h1> -->
+    <p>Detta är startsidan.</p>
+    <a href="/logout">logga ut</a>
+</body>
+</html>
